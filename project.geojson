@@ -1,0 +1,155 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "project_id": "P001",
+        "project_name": "Bengaluru Urban Transport Corridor",
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "project_type": "Transport",
+        "status": "Under Acquisition"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.5946, 12.9716]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "project_id": "P002",
+        "project_name": "Bengaluru Peripheral Road Project",
+        "state": "Karnataka",
+        "district": "Bengaluru Urban",
+        "project_type": "Road",
+        "status": "Pending"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.6200, 13.0200]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "project_id": "P003",
+        "project_name": "Mysuru Industrial Corridor",
+        "state": "Karnataka",
+        "district": "Mysuru",
+        "project_type": "Industrial",
+        "status": "Under Acquisition"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.6394, 12.2958]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "project_id": "P004",
+        "project_name": "Mumbai Metropolitan Transport Project",
+        "state": "Maharashtra",
+        "district": "Mumbai Suburban",
+        "project_type": "Transport",
+        "status": "Pending"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [72.8777, 19.0760]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "project_id": "P005",
+        "project_name": "Pune Ring Road Development",
+        "state": "Maharashtra",
+        "district": "Pune",
+        "project_type": "Road",
+        "status": "Under Acquisition"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.8567, 18.5204]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "project_id": "P006",
+        "project_name": "Nagpur Logistics Corridor",
+        "state": "Maharashtra",
+        "district": "Nagpur",
+        "project_type": "Logistics",
+        "status": "Pending"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [79.0882, 21.1458]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "project_id": "P007",
+        "project_name": "Hyderabad Outer Ring Road Expansion",
+        "state": "Telangana",
+        "district": "Hyderabad",
+        "project_type": "Road",
+        "status": "Acquired"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [78.4867, 17.3850]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "project_id": "P008",
+        "project_name": "Chennai Industrial Development Zone",
+        "state": "Tamil Nadu",
+        "district": "Chennai",
+        "project_type": "Industrial",
+        "status": "Under Acquisition"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [80.2707, 13.0827]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "project_id": "P009",
+        "project_name": "Delhi NCR Highway Expansion",
+        "state": "Delhi",
+        "district": "New Delhi",
+        "project_type": "Highway",
+        "status": "Pending"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.1025, 28.7041]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "project_id": "P010",
+        "project_name": "Kolkata Freight Corridor",
+        "state": "West Bengal",
+        "district": "Kolkata",
+        "project_type": "Logistics",
+        "status": "Acquired"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [88.3639, 22.5726]
+      }
+    }
+  ]
+}

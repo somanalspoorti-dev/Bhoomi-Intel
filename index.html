@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bhoomi-Intel</title>
+
+    <!-- Leaflet CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="top-header">
+
+        <div class="logo-section">
+
+            <div class="logo">
+             <img src="bhoomi-intel-logo.jpg" alt="Bhoomi-Intel">
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- MAP -->
+
+    <div id="map"></div>
+
+
+    <!-- SEARCH BOX -->
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="surveySearch"
+            placeholder="Enter Project ID."
+        >
+
+        <button onclick="searchParcel()">
+            Search
+        </button>
+
+    </div>
+
+
+    <!-- LAND STATISTICS -->
+
+    <div class="stats-panel">
+
+        <h2>Land Acquisition</h2>
+
+        <div class="stat-card">
+            <span>Total Parcels</span>
+            <strong id="totalParcels">0</strong>
+        </div>
+
+        <div class="stat-card acquired">
+            <span>Acquired</span>
+            <strong id="acquiredParcels">0</strong>
+        </div>
+
+        <div class="stat-card acquisition">
+            <span>Under Acquisition</span>
+            <strong id="underAcquisition">0</strong>
+        </div>
+
+        <div class="stat-card pending">
+            <span>Pending</span>
+            <strong id="pendingParcels">0</strong>
+        </div>
+
+        <div class="stat-card not-acquired">
+            <span>Not Acquired</span>
+            <strong id="notAcquired">0</strong>
+        </div>
+
+    </div>
+
+
+    <!-- LEAFLET JAVASCRIPT -->
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- OUR JAVASCRIPT -->
+
+    <script src="map.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1257 @@
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+  background: #f4f7f5;
+  color: #17231c;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+/* =====================================================
+   MAIN APP
+===================================================== */
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  background: #f4f7f5;
+}
+
+
+/* =====================================================
+   SIDEBAR
+===================================================== */
+
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      #0d351f 0%,
+      #104526 55%,
+      #0a2b19 100%
+    );
+
+  color: white;
+  padding: 24px 16px;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow:
+    4px 0 18px rgba(0, 0, 0, 0.12);
+
+  z-index: 100;
+}
+
+
+/* =====================================================
+   BRAND
+===================================================== */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 6px 8px 30px;
+}
+
+.brand-logo {
+  width: 44px;
+  height: 44px;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #d9efdf;
+  color: #145b30;
+
+  font-size: 17px;
+  font-weight: 800;
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.brand h2 {
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 750;
+  letter-spacing: -0.3px;
+}
+
+.brand span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #a9c9b2;
+
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.nav-button {
+  width: 100%;
+
+  border: none;
+  border-radius: 10px;
+
+  background: transparent;
+  color: #c5dbc9;
+
+  padding: 13px 14px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  text-align: left;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.nav-button span {
+  width: 22px;
+
+  display: inline-flex;
+  justify-content: center;
+
+  font-size: 17px;
+}
+
+.nav-button:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+.nav-button.active {
+  background: #d9efdf;
+  color: #145b30;
+
+  box-shadow:
+    0 5px 14px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =====================================================
+   SIDEBAR FOOTER
+===================================================== */
+
+.sidebar-footer {
+  margin-top: auto;
+
+  padding: 18px 10px 4px;
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-footer span {
+  display: block;
+
+  color: #8fb49a;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+.sidebar-footer small {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #c4d9c9;
+
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   MAIN AREA
+===================================================== */
+
+.main {
+  width: calc(100% - 250px);
+  margin-left: 250px;
+  min-height: 100vh;
+}
+
+
+/* =====================================================
+   TOP BAR
+===================================================== */
+
+.topbar {
+  height: 76px;
+
+  padding: 0 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: white;
+
+  border-bottom:
+    1px solid #e2e9e4;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 50;
+}
+
+.topbar-label {
+  color: #7c8d82;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+.topbar h2 {
+  margin: 4px 0 0;
+
+  font-size: 21px;
+  font-weight: 750;
+}
+
+
+/* =====================================================
+   OFFICER
+===================================================== */
+
+.officer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.officer-avatar {
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #d9efdf;
+  color: #145b30;
+
+  font-weight: 800;
+}
+
+.officer strong {
+  display: block;
+
+  font-size: 12px;
+}
+
+.officer span {
+  display: block;
+
+  margin-top: 2px;
+
+  color: #829087;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.page {
+  padding: 30px 32px 50px;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+.page-title h1 {
+  margin: 0;
+
+  font-size: 29px;
+  letter-spacing: -0.7px;
+}
+
+.page-title p {
+  margin: 6px 0 0;
+
+  color: #748278;
+
+  font-size: 13px;
+}
+
+
+/* =====================================================
+   STATISTICS
+===================================================== */
+
+.stats-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, minmax(130px, 1fr));
+
+  gap: 14px;
+
+  margin-bottom: 26px;
+}
+
+.stat-box {
+  background: white;
+
+  border:
+    1px solid #e2e9e4;
+
+  border-radius: 13px;
+
+  padding: 18px;
+
+  min-height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-shadow:
+    0 3px 12px rgba(25, 50, 35, 0.035);
+}
+
+.stat-box span {
+  color: #718077;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.stat-box strong {
+  margin-top: 10px;
+
+  color: #173c25;
+
+  font-size: 28px;
+  line-height: 1;
+}
+
+.acquired-box {
+  border-top: 3px solid #2e7d32;
+}
+
+.acquisition-box {
+  border-top: 3px solid #f57c00;
+}
+
+.pending-box {
+  border-top: 3px solid #fbc02d;
+}
+
+.not-acquired-box {
+  border-top: 3px solid #8b9690;
+}
+
+
+/* =====================================================
+   GIS SECTION
+===================================================== */
+
+.gis-section {
+  margin-bottom: 28px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 14px;
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  font-size: 19px;
+}
+
+.section-heading p {
+  margin: 4px 0 0;
+
+  color: #78867d;
+
+  font-size: 12px;
+}
+
+.gis-container {
+  width: 100%;
+
+  height: 620px;
+
+  overflow: hidden;
+
+  border-radius: 15px;
+
+  background: #e7eee9;
+
+  border:
+    1px solid #dce6df;
+
+  box-shadow:
+    0 6px 20px rgba(25, 50, 35, 0.06);
+}
+
+.gis-frame {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+
+  display: block;
+}
+
+
+/* =====================================================
+   SECTION CARD
+===================================================== */
+
+.section-card {
+  background: white;
+
+  border:
+    1px solid #e2e9e4;
+
+  border-radius: 15px;
+
+  padding: 22px;
+
+  box-shadow:
+    0 4px 16px rgba(25, 50, 35, 0.035);
+}
+
+
+/* =====================================================
+   GREEN BUTTON
+===================================================== */
+
+.green-button {
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 9px 15px;
+
+  background: #155b31;
+  color: white;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.green-button:hover {
+  background: #0d4725;
+  transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   PROJECT GRID
+===================================================== */
+
+.project-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 14px;
+}
+
+.project-card {
+  padding: 18px;
+
+  border:
+    1px solid #e2e9e4;
+
+  border-radius: 12px;
+
+  background: #fbfdfb;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+
+  border-color: #a9cbb1;
+
+  box-shadow:
+    0 7px 20px rgba(20, 75, 40, 0.08);
+}
+
+.project-card-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 12px;
+}
+
+.project-id {
+  display: inline-block;
+
+  color: #21703b;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 0.7px;
+}
+
+.project-card h3 {
+  margin: 7px 0 0;
+
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.project-card p {
+  margin: 9px 0 0;
+
+  color: #748078;
+
+  font-size: 11px;
+}
+
+.progress-circle {
+  min-width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+
+  background: #e4f1e7;
+  color: #185c31;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+
+  margin-top: 13px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background: #e4eae5;
+}
+
+.progress-bar div {
+  height: 100%;
+
+  border-radius: inherit;
+
+  background: #2e7d32;
+
+  transition: width 0.4s ease;
+}
+
+.project-card small {
+  display: block;
+
+  margin-top: 7px;
+
+  color: #87938c;
+
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.search-container {
+  display: flex;
+
+  gap: 8px;
+
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 13px 15px;
+
+  border:
+    1px solid #d8e2db;
+
+  border-radius: 9px;
+
+  outline: none;
+
+  background: white;
+
+  color: #1c2d22;
+
+  font-size: 13px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.search-container input:focus {
+  border-color: #3d8b55;
+
+  box-shadow:
+    0 0 0 3px rgba(61, 139, 85, 0.1);
+}
+
+.search-container button {
+  border: none;
+
+  padding: 0 17px;
+
+  border-radius: 9px;
+
+  background: #e5eee7;
+
+  color: #31563d;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   PROJECT LIST
+===================================================== */
+
+.project-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.project-row {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    260px;
+
+  gap: 30px;
+
+  padding: 20px;
+
+  border:
+    1px solid #e1e8e3;
+
+  border-radius: 13px;
+
+  background: white;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.project-row:hover {
+  transform: translateY(-2px);
+
+  border-color: #a9cbb1;
+
+  box-shadow:
+    0 7px 20px rgba(20, 75, 40, 0.07);
+}
+
+.project-row h2 {
+  margin: 6px 0;
+
+  font-size: 17px;
+}
+
+.project-info {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 15px;
+
+  margin-top: 12px;
+
+  color: #758279;
+
+  font-size: 11px;
+}
+
+.project-progress {
+  align-self: center;
+}
+
+.project-progress > div:first-child {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  color: #748078;
+
+  font-size: 11px;
+}
+
+.project-progress strong {
+  color: #1b5d32;
+
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   PARCEL SUMMARY
+===================================================== */
+
+.parcel-summary {
+  margin-bottom: 15px;
+
+  color: #718078;
+
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   PARCEL GRID
+===================================================== */
+
+.parcel-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 14px;
+}
+
+.parcel-card {
+  background: white;
+
+  border:
+    1px solid #e0e8e2;
+
+  border-radius: 12px;
+
+  padding: 18px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.parcel-card:hover {
+  transform: translateY(-2px);
+
+  border-color: #a9cbb1;
+
+  box-shadow:
+    0 7px 20px rgba(20, 75, 40, 0.07);
+}
+
+.parcel-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+.parcel-header > span:first-child {
+  color: #216c39;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.parcel-status {
+  padding: 5px 8px;
+
+  border-radius: 20px;
+
+  background: #edf4ef;
+
+  color: #41634b;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.parcel-card h3 {
+  margin: 12px 0;
+
+  font-size: 15px;
+}
+
+.parcel-card p {
+  margin: 8px 0;
+
+  color: #718078;
+
+  font-size: 11px;
+}
+
+.parcel-card p strong {
+  color: #43554a;
+}
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  background:
+    rgba(9, 25, 15, 0.5);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  z-index: 1000;
+}
+
+.parcel-modal {
+  position: relative;
+
+  width: min(600px, 100%);
+
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  background: white;
+
+  border-radius: 16px;
+
+  padding: 28px;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+  position: absolute;
+
+  right: 17px;
+  top: 14px;
+
+  width: 32px;
+  height: 32px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #edf2ee;
+
+  color: #45564b;
+
+  font-size: 21px;
+
+  line-height: 1;
+}
+
+.parcel-modal h2 {
+  margin: 7px 0 25px;
+
+  font-size: 25px;
+}
+
+
+/* =====================================================
+   DETAIL GRID
+===================================================== */
+
+.detail-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 12px;
+}
+
+.detail-grid > div {
+  padding: 14px;
+
+  border-radius: 9px;
+
+  background: #f5f8f5;
+
+  border:
+    1px solid #e4ebe5;
+}
+
+.detail-grid span {
+  display: block;
+
+  color: #829087;
+
+  font-size: 10px;
+}
+
+.detail-grid strong {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #26382c;
+
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.loading-screen,
+.error-screen {
+  min-height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #f4f7f5;
+}
+
+.loading-card,
+.error-card {
+  width: min(420px, calc(100% - 40px));
+
+  padding: 35px;
+
+  border-radius: 16px;
+
+  background: white;
+
+  text-align: center;
+
+  border:
+    1px solid #e0e8e2;
+
+  box-shadow:
+    0 10px 35px rgba(20, 60, 35, 0.08);
+}
+
+.loading-logo {
+  width: 58px;
+  height: 58px;
+
+  margin: 0 auto 15px;
+
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #d9efdf;
+  color: #145b30;
+
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.loading-card h2,
+.error-card h2 {
+  margin: 0;
+
+  font-size: 20px;
+}
+
+.loading-card p,
+.error-card p {
+  color: #78867d;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+.error-card strong {
+  color: #185c31;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1200px) {
+
+  .stats-grid {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+  .project-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .parcel-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 850px) {
+
+  .sidebar {
+    width: 210px;
+  }
+
+  .main {
+    width: calc(100% - 210px);
+    margin-left: 210px;
+  }
+
+  .project-row {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .gis-container {
+    height: 500px;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .sidebar {
+    position: static;
+
+    width: 100%;
+
+    min-height: auto;
+
+    padding: 12px;
+
+    flex-direction: row;
+
+    align-items: center;
+  }
+
+  .brand {
+    padding: 0;
+
+    flex: 1;
+  }
+
+  .brand-logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .navigation {
+    flex-direction: row;
+  }
+
+  .nav-button {
+    width: auto;
+
+    padding: 9px;
+  }
+
+  .nav-button span {
+    margin: 0;
+  }
+
+  .nav-button {
+    font-size: 0;
+  }
+
+  .sidebar-footer {
+    display: none;
+  }
+
+  .app {
+    display: block;
+  }
+
+  .main {
+    width: 100%;
+
+    margin-left: 0;
+  }
+
+  .topbar {
+    padding: 0 18px;
+  }
+
+  .page {
+    padding: 20px 15px 35px;
+  }
+
+  .stats-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .project-grid,
+  .parcel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gis-container {
+    height: 450px;
+  }
+
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .officer {
+    display: none;
+  }
+}
+
+
+@media (max-width: 420px) {
+
+  .brand h2 {
+    font-size: 14px;
+  }
+
+  .brand span {
+    font-size: 9px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    height: 65px;
+  }
+
+  .gis-container {
+    height: 400px;
+  }
+}
+
+.gis-iframe {
+  width: 100%;
+  height: 700px;
+  border: none;
+  display: block;
+}
+
+

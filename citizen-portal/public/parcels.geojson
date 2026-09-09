@@ -1,0 +1,365 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PCL001",
+        "project_id": "P001",
+        "survey_no": "45/1",
+        "owner": "Sample Owner 1",
+        "district": "Bengaluru Urban",
+        "state": "Karnataka",
+        "area": "2.4 acres",
+        "status": "Acquired",
+        "project": "Bengaluru Urban Transport Corridor"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[77.5800,12.9700],[77.5820,12.9700],[77.5820,12.9720],[77.5800,12.9720],[77.5800,12.9700]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PCL002",
+        "project_id": "P001",
+        "survey_no": "45/2",
+        "owner": "Sample Owner 2",
+        "district": "Bengaluru Urban",
+        "state": "Karnataka",
+        "area": "1.8 acres",
+        "status": "Under Acquisition",
+        "project": "Bengaluru Urban Transport Corridor"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[77.5820,12.9700],[77.5840,12.9700],[77.5840,12.9720],[77.5820,12.9720],[77.5820,12.9700]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PCL003",
+        "project_id": "P002",
+        "survey_no": "46/1",
+        "owner": "Sample Owner 3",
+        "district": "Bengaluru Urban",
+        "state": "Karnataka",
+        "area": "3.1 acres",
+        "status": "Pending",
+        "project": "Bengaluru Peripheral Road Project"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[77.5800,12.9720],[77.5820,12.9720],[77.5820,12.9740],[77.5800,12.9740],[77.5800,12.9720]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PCL004",
+        "project_id": "P002",
+        "survey_no": "46/2",
+        "owner": "Sample Owner 4",
+        "district": "Bengaluru Urban",
+        "state": "Karnataka",
+        "area": "2.2 acres",
+        "status": "Not Acquired",
+        "project": "Bengaluru Peripheral Road Project"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[77.5820,12.9720],[77.5840,12.9720],[77.5840,12.9740],[77.5820,12.9740],[77.5820,12.9720]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PCL005",
+        "project_id": "P003",
+        "survey_no": "47/1",
+        "owner": "Sample Owner 5",
+        "district": "Mysuru",
+        "state": "Karnataka",
+        "area": "1.5 acres",
+        "status": "Acquired",
+        "project": "Mysuru Industrial Corridor"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[76.6300,12.2900],[76.6320,12.2900],[76.6320,12.2920],[76.6300,12.2920],[76.6300,12.2900]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PCL006",
+        "project_id": "P003",
+        "survey_no": "47/2",
+        "owner": "Sample Owner 6",
+        "district": "Mysuru",
+        "state": "Karnataka",
+        "area": "2.7 acres",
+        "status": "Under Acquisition",
+        "project": "Mysuru Industrial Corridor"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[76.6320,12.2900],[76.6340,12.2900],[76.6340,12.2920],[76.6320,12.2920],[76.6320,12.2900]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PCL007",
+        "project_id": "P004",
+        "survey_no": "48/1",
+        "owner": "Sample Owner 7",
+        "district": "Mumbai Suburban",
+        "state": "Maharashtra",
+        "area": "3.5 acres",
+        "status": "Pending",
+        "project": "Mumbai Metropolitan Transport Project"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[72.8700,19.0700],[72.8720,19.0700],[72.8720,19.0720],[72.8700,19.0720],[72.8700,19.0700]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PCL008",
+        "project_id": "P004",
+        "survey_no": "48/2",
+        "owner": "Sample Owner 8",
+        "district": "Mumbai Suburban",
+        "state": "Maharashtra",
+        "area": "2.9 acres",
+        "status": "Not Acquired",
+        "project": "Mumbai Metropolitan Transport Project"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[72.8720,19.0700],[72.8740,19.0700],[72.8740,19.0720],[72.8720,19.0720],[72.8720,19.0700]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PCL009",
+        "project_id": "P005",
+        "survey_no": "49/1",
+        "owner": "Sample Owner 9",
+        "district": "Pune",
+        "state": "Maharashtra",
+        "area": "1.9 acres",
+        "status": "Acquired",
+        "project": "Pune Ring Road Development"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[73.8500,18.5150],[73.8520,18.5150],[73.8520,18.5170],[73.8500,18.5170],[73.8500,18.5150]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PCL010",
+        "project_id": "P005",
+        "survey_no": "49/2",
+        "owner": "Sample Owner 10",
+        "district": "Pune",
+        "state": "Maharashtra",
+        "area": "2.6 acres",
+        "status": "Under Acquisition",
+        "project": "Pune Ring Road Development"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[73.8520,18.5150],[73.8540,18.5150],[73.8540,18.5170],[73.8520,18.5170],[73.8520,18.5150]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PCL011",
+        "project_id": "P006",
+        "survey_no": "50/1",
+        "owner": "Sample Owner 11",
+        "district": "Nagpur",
+        "state": "Maharashtra",
+        "area": "3.0 acres",
+        "status": "Pending",
+        "project": "Nagpur Logistics Corridor"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[79.0800,21.1400],[79.0820,21.1400],[79.0820,21.1420],[79.0800,21.1420],[79.0800,21.1400]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PCL012",
+        "project_id": "P006",
+        "survey_no": "50/2",
+        "owner": "Sample Owner 12",
+        "district": "Nagpur",
+        "state": "Maharashtra",
+        "area": "2.1 acres",
+        "status": "Not Acquired",
+        "project": "Nagpur Logistics Corridor"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[79.0820,21.1400],[79.0840,21.1400],[79.0840,21.1420],[79.0820,21.1420],[79.0820,21.1400]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PCL013",
+        "project_id": "P007",
+        "survey_no": "51/1",
+        "owner": "Sample Owner 13",
+        "district": "Hyderabad",
+        "state": "Telangana",
+        "area": "2.8 acres",
+        "status": "Acquired",
+        "project": "Hyderabad Outer Ring Road Expansion"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[78.4800,17.3800],[78.4820,17.3800],[78.4820,17.3820],[78.4800,17.3820],[78.4800,17.3800]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PCL014",
+        "project_id": "P007",
+        "survey_no": "51/2",
+        "owner": "Sample Owner 14",
+        "district": "Hyderabad",
+        "state": "Telangana",
+        "area": "2.3 acres",
+        "status": "Under Acquisition",
+        "project": "Hyderabad Outer Ring Road Expansion"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[78.4820,17.3800],[78.4840,17.3800],[78.4840,17.3820],[78.4820,17.3820],[78.4820,17.3800]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PCL015",
+        "project_id": "P008",
+        "survey_no": "52/1",
+        "owner": "Sample Owner 15",
+        "district": "Chennai",
+        "state": "Tamil Nadu",
+        "area": "2.6 acres",
+        "status": "Acquired",
+        "project": "Chennai Industrial Development Zone"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[80.2650,13.0800],[80.2670,13.0800],[80.2670,13.0820],[80.2650,13.0820],[80.2650,13.0800]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PCL016",
+        "project_id": "P008",
+        "survey_no": "52/2",
+        "owner": "Sample Owner 16",
+        "district": "Chennai",
+        "state": "Tamil Nadu",
+        "area": "2.0 acres",
+        "status": "Under Acquisition",
+        "project": "Chennai Industrial Development Zone"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[80.2670,13.0800],[80.2690,13.0800],[80.2690,13.0820],[80.2670,13.0820],[80.2670,13.0800]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PCL017",
+        "project_id": "P009",
+        "survey_no": "53/1",
+        "owner": "Sample Owner 17",
+        "district": "New Delhi",
+        "state": "Delhi",
+        "area": "3.2 acres",
+        "status": "Under Acquisition",
+        "project": "Delhi NCR Highway Expansion"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[77.1000,28.7000],[77.1020,28.7000],[77.1020,28.7020],[77.1000,28.7020],[77.1000,28.7000]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PCL018",
+        "project_id": "P009",
+        "survey_no": "53/2",
+        "owner": "Sample Owner 18",
+        "district": "New Delhi",
+        "state": "Delhi",
+        "area": "2.5 acres",
+        "status": "Pending",
+        "project": "Delhi NCR Highway Expansion"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[77.1020,28.7000],[77.1040,28.7000],[77.1040,28.7020],[77.1020,28.7020],[77.1020,28.7000]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PCL019",
+        "project_id": "P010",
+        "survey_no": "54/1",
+        "owner": "Sample Owner 19",
+        "district": "Kolkata",
+        "state": "West Bengal",
+        "area": "2.9 acres",
+        "status": "Acquired",
+        "project": "Kolkata Freight Corridor"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[88.3600,22.5700],[88.3620,22.5700],[88.3620,22.5720],[88.3600,22.5720],[88.3600,22.5700]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PCL020",
+        "project_id": "P010",
+        "survey_no": "54/2",
+        "owner": "Sample Owner 20",
+        "district": "Kolkata",
+        "state": "West Bengal",
+        "area": "2.4 acres",
+        "status": "Under Acquisition",
+        "project": "Kolkata Freight Corridor"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[88.3620,22.5700],[88.3640,22.5700],[88.3640,22.5720],[88.3620,22.5720],[88.3620,22.5700]]]
+      }
+    }
+  ]
+}
